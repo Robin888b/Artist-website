@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    inset: 0;
+}
+
+html {
+    --BackgroundColor1: #262626;
+    --BackgroundColor2: #4A30F2;
+}
+
+body {
+    background: linear-gradient(#1B2735 0%, #090A0F 100%);
+}
+
+#backgroundCnv {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+}
