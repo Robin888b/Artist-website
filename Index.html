@@ -8,7 +8,106 @@
 </head>
 <body>
     <canvas id="backgroundCnv"></canvas>
-    
+    <div class="content active" id="home">
+        <header>
+            <div>
+                <h1>Nick Wilde</h1>
+                <span class="icon pen">Digital artist,</span> <span class="fox icon">fox,</span> <span class="male icon">He/They,</span> <span class="police icon">police officer,</span>
+                <h4><span class="coms">Commissions Open</span></h4>
+            </div>
+        </header>
+        <div class="links">
+            <ul>
+                <li><button onclick="Navigate('#Gallery')">Gallery</button></li>
+                <li><button onclick="Navigate('#TOS')">TOS</button></li>
+                <li><button onclick="Navigate('#Prices')">Prices</button></li>
+                <li><button onclick="Navigate('#Contact')">Contact</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content" id="gallery">
+        <header>
+            <button onclick="Navigate('#Home')" >← Back</button>
+        </header>
+        <div class="tagList">
+            <ul>
+                <li><button class="itemTag selected" onclick="toggleTag(-1)" id="itemTag-1">All</button></li>
+                <li><button class="itemTag" onclick="toggleTag(1)" id="itemTag1">HeadShot</button></li>
+                <li><button class="itemTag" onclick="toggleTag(2)" id="itemTag2">Partial</button></li>
+                <li><button class="itemTag" onclick="toggleTag(3)" id="itemTag3">Full Body</button></li>
+            </ul>
+        </div>
+        <div class="imgList">
+            <button class="T3" onclick="Navigate('#img1')" ><img src="./src/img/i1.png" alt=""></button>
+            <button class="T1" onclick="Navigate('#img2')" ><img src="./src/img/i2.png" alt=""></button>
+            <button class="T2" onclick="Navigate('#img3')" ><img src="./src/img/i3.png" alt=""></button>
+            <button class="T1" onclick="Navigate('#img4')" ><img src="./src/img/i4.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="content" id="tos">
+        <header>
+            <button onclick="Navigate('#Home')" >← Back</button>
+        </header>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi! Nesciunt temporibus vero magnam harum distinctio eum soluta quae libero est?
+            <br>Pariatur asperiores saepe ea. Numquam quaerat enim voluptatem itaque nesciunt, commodi perspiciatis hic obcaecati, reiciendis deleniti odit incidunt maxime quasi vel omnis neque molestias quos esse, minus blanditiis eius.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod itaque commodi placeat laboriosam soluta quaerat ex quasi at. Tenetur omnis <br>ex doloribus exercitationem dolorum maxime autem, alias aut magnam! Saepe, vitae.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo odio recusandae nisi corrupti veritatis minus praesentium? Architecto vero ipsum nihil <br>perferendis deleniti enim veniam voluptas, vel nobis, dolorum ipsa? Perferendis provident placeat vitae molestiae maxime! Nobis, voluptas alias reprehenderit doloremque minus odit dolore, nulla omnis at hic dolor harum quas <br>reiciendis eligendi voluptatum assumenda, dolorem consequuntur dolores. Sit animi, repellendus dolorem nulla maiores minus debitis odio nam eveniet iusto?
+        </div>
+    </div>
+
+    <div class="content" id="prices">
+        <header>
+            <button onclick="Navigate('#Home')" >← Back</button>
+        </header>
+        <div>
+            <table>
+                <tr><td>HeadShot</td><td>15 zc</td></tr>
+                <tr><td>Partial</td><td>25 zc</td></tr>
+                <tr><td>Full-Boddy</td><td>30 zc</td></tr>
+            </table><br>
+            (all prices in Zootopia coins)
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+        <header>
+            <button onclick="Navigate('#Home')" >← Back</button>
+        </header>
+        <div>
+            <a href="https://twitter.com/WaltDisneyCo">Twitter</a><br>
+            <a href="https://www.instagram.com/disney/">Instagram</a><br>
+            <a href="NickWilde@example.com">NickWilde@example.com</a>
+        </div>
+    </div>
+
+    <!--IMG-->
+    <div class="content" id="img1">
+        <header><button onclick="Navigate('#Gallery')" >← Back</button></header>
+        <img src="./src/img/i1.png" alt="">
+    </div>
+    <div class="content" id="img2">
+        <header><button onclick="Navigate('#Gallery')" >← Back</button></header>
+        <img src="./src/img/i2.png" alt="">
+    </div>
+    <div class="content" id="img3">
+        <header><button onclick="Navigate('#Gallery')" >← Back</button></header>
+        <img src="./src/img/i3.png" alt="">
+    </div>
+    <div class="content" id="img4">
+        <header><button onclick="Navigate('#Gallery')" >← Back</button></header>
+        <img src="./src/img/i4.png" alt="">
+    </div>
+
+    <!--Dialog-->
+    <dialog id="dialog1">
+        the mobile version has not yet been developed <br>
+        <button onclick="document.getElementById('dialog1').close()">Close</button>
+    </dialog>
 </body>
 <script src="./src/app.js"></script>
 </html>
